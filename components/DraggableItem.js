@@ -1,5 +1,5 @@
 import { useDrag } from 'react-dnd';
-import '../styles/Home.css'
+import '../styles/global.css'
 
 export default function DraggableItem({ item, onClick }) {
   const [{ isDragging }, dragRef] = useDrag(() => ({

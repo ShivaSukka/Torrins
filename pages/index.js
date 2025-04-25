@@ -3,7 +3,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import DraggableItem from '../components/DraggableItem';
 import Cart from '../components/Cart';
 import { useState } from 'react';
-import '../styles/Home.css'
+import '../styles/global.css'
 
 export default function Home() {
   const [cartItems, setCartItems] = useState([]);
