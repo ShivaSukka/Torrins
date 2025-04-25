@@ -1,0 +1,124 @@
+/* Center the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+  }
+  
+  .container {
+    display: flex;
+    gap: 80px;
+    padding: 30px 60px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80vw;              /* Increased width */
+    max-height: 80vh;         /* Decreased height */
+    overflow: hidden;
+  }
+  
+  
+  .title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Bigger clothing icons */
+  .clothingItem {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 6px;
+    transition: transform 0.2s ease;
+  }
+  
+  .clothingItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .cartBox {
+    border: 2px solid #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;     /* Was 220px */
+    background-color: #f8f8f8;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;     /* Let it size based on content */
+  }
+  
+  
+  .cartTitle {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+  }
+  
+  /* Bigger cart items */
+  .cartItem {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+  
+  .cartItem img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .cartButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #2e86c1;
+  }
+  
