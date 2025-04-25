@@ -1,4 +1,5 @@
-import '../styles/global.css'
+import '../pages/global.css'
+
 
 export default function Cart({ cartItems, onReset, onSave }) {
   return (

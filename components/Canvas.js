@@ -1,4 +1,5 @@
 import { useDrop } from 'react-dnd';
+import '../pages/global.css'
 
 export default function Canvas({ canvasItems, onDrop }) {
   const [{ isOver }, dropRef] = useDrop(() => ({
