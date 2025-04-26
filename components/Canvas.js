@@ -1,5 +1,5 @@
 import { useDrop } from 'react-dnd';
-import '../pages/global.css'
+import Image from 'next/image';
 
 export default function Canvas({ canvasItems, onDrop }) {
   const [{ isOver }, dropRef] = useDrop(() => ({
@@ -25,17 +25,23 @@ export default function Canvas({ canvasItems, onDrop }) {
       }}
     >
       {canvasItems.map((item, i) => (
-        <img
+        <div
           key={i}
-          src={item.src}
-          alt={item.name}
           style={{
             position: 'absolute',
             top: item.y - 100,
             left: item.x - 100,
             width: 100,
+            height: 100,
           }}
-        />
+        >
+          <Image
+            src={item.src}
+            alt={item.name}
+            layout="fill"
+            objectFit="contain"
+          />
+        </div>
       ))}
     </div>
   );

@@ -1,5 +1,4 @@
-import '../pages/global.css'
-
+import Image from 'next/image';
 
 export default function Cart({ cartItems, onReset, onSave }) {
   return (
@@ -9,7 +8,13 @@ export default function Cart({ cartItems, onReset, onSave }) {
       <div className={"cartItems"}>
         {cartItems.map((item, i) => (
           <div key={i} className={"cartItem"} title={item.name}>
-            <img src={item.src} alt={item.name} />
+            <Image
+              src={item.src}
+              alt={item.name}
+              width={80}
+              height={80}
+              style={{ objectFit: 'contain' }}
+            />
           </div>
         ))}
       </div>
